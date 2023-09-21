@@ -29,7 +29,7 @@ namespace Obl_opgave_1.Tests
         [TestMethod()]
         public void ValidatePriceTestException()
         {
-            Book bookPriceHigh = new Book() { Id = 1, Title = "Den forkerte død", Price = 1200 };
+            Book bookPriceHigh = new Book() { Id = 1, Title = "Den forkerte død", Price = 1220 };
             Book bookNoPrice = new Book() { Id = 2, Title = "Den forkerte død", Price = -1 };
             Assert.ThrowsException<ArgumentOutOfRangeException>(()=>bookPriceHigh.ValidatePrice());
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => bookNoPrice.ValidatePrice());

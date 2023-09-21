@@ -32,7 +32,7 @@
             {
                 throw new ArgumentOutOfRangeException();
             }
-            else if(1200<=Price)
+            else if(1200<Price)
             {
                 throw new ArgumentOutOfRangeException();
             }
